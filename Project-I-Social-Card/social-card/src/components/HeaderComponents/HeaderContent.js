@@ -1,9 +1,10 @@
 import React from 'react';
+import moment from 'moment';
 import './Header.css';
 import HeaderTitle from './HeaderTitle';
 const headerTitle = 'Lambda School';
 const headerHandle = '@LambdaSchool';
-const headerDate = '26 Jan'
+const headerDate = moment().format("D MMM");
 
 
 function HeaderContent ({ text }) {

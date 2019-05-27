@@ -12,45 +12,8 @@
   margin: 2rem auto;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-evenly;
-}
+@import './components/HeaderComponents/Header.css';
 
-.header-container .img {
-  margin: 0 1rem 0 0;
-}
+@import './components/CardComponents/Card.css';
 
-.header-container .img img {
-  width: 100%;
-  border-radius: 0.5rem;
-}
-.header-content {
-  margin: 0 1rem 0 0;
-}
-.header-content h2 {
-  margin: 0;
-  padding: 0;
-}
-
-.header-details {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-.header-details p {
-  margin-left: 1rem;
-}
-
-.card-container {
-  border: 1px #555 solid;
-  border-radius: 0.5rem;
-}
-
-.banner img {
-  width: 100%;
-}
-
-.card-content {
-  padding: 0 1rem;
-}
+@import './components/FooterComponents/Footer.css';

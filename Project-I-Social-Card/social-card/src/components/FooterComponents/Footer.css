@@ -1,0 +1,12 @@
+.footer {
+    width: 100%;
+    margin: 1rem 0 1rem 4rem ;
+}
+
+.footer i {
+    padding-right: 4rem;
+}
+.footer i span {
+    margin-left: 1rem;
+    font-weight: normal;
+}
