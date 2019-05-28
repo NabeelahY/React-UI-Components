@@ -4,7 +4,8 @@ import './App.css';
 const data = {
   numbers: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
   operators: ['=', '+', '-' , 'x', '÷'],
-  actionButtons: ['0', 'clear']
+  zero: '0',
+  clear: 'clear'
 }
 
 const App = () => {
