@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import CalcDisplay from './components/DisplayComponents/CalculatorDisplay';
 import NumberButton from './components/ButtonComponents/NumberButton';
@@ -12,8 +12,15 @@ const data = {
   clear: 'clear'
 }
 
+
+
 const App = () => {
-  return (
+ const [count, updateCount] = useState(0);
+
+const handleClick = (value) => {
+  updateCount(count + value)
+};
+ return (
     <div className="cal-container">
       {/* <h3>Welcome to React Calculator</h3>
       <p>
@@ -28,21 +35,21 @@ const App = () => {
         </strong>
       </p> */}
 
-      <CalcDisplay />
+      <CalcDisplay total={count} />
       <div className='button-container'>
         <div className='btn-container'>
           <div className= 'action'>
-            <ActionButton action={data.clear} />
+            <ActionButton action={data.clear}  handleClick={handleClick} />
           </div>
           <div className= 'number'>
-            <NumberButton numbers={data.numbers} />
+            <NumberButton numbers={data.numbers} handleClick={handleClick} />
           </div>
-          <div className= 'action'>
-            <ActionButton action={data.zero} />
+          <div>
+            <ActionButton action={data.zero}  handleClick={handleClick} />
           </div>
         </div>
         <div className = 'operators'>
-          <OperatorButton operators={data.operators} />
+          <OperatorButton operators={data.operators} handleClick={handleClick} />
         </div>
       </div>
 
