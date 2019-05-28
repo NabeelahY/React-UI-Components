@@ -6,7 +6,7 @@ function NumberButton(props) {
 
     return (
         numbers.map(no => {
-           return <button className = 'no-key' onClick={() => props.handleClick(no)} key={no}>{no}</button>
+           return <button className = {props.btnStyle}  onClick={() => props.handleClick(no)} key={no}>{no}</button>
         })
     )
 }

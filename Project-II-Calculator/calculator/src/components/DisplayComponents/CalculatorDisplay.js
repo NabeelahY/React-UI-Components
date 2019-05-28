@@ -4,7 +4,7 @@ import './Display.css';
 
 function CalcDisplay (props) {
     return (
-        <div className='display'>{props.total}</div>
+        <div className= {props.displayStyle} >{props.total}</div>
     )
 }
 

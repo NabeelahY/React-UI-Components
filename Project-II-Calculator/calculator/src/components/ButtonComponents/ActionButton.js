@@ -5,7 +5,7 @@ import './Button.css';
 function ActionButton(props) {
     return (
         <div>
-            <button className= 'action-btn' onClick={() =>  props.handleClick(props.action)}>{props.action}</button>
+            <button className= {props.actionStyle} onClick={() =>  props.handleClick(props.action)}>{props.action}</button>
         </div>
     )
 }

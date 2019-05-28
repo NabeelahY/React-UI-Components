@@ -35,21 +35,21 @@ const handleClick = (value) => {
         </strong>
       </p> */}
 
-      <CalcDisplay total={count} />
+      <CalcDisplay displayStyle = 'display' total={count} />
       <div className='button-container'>
         <div className='btn-container'>
           <div className= 'action'>
-            <ActionButton action={data.clear}  handleClick={handleClick} />
+            <ActionButton actionStyle = 'action-btn' action={data.clear}  handleClick={handleClick} />
           </div>
           <div className= 'number'>
-            <NumberButton numbers={data.numbers} handleClick={handleClick} />
+            <NumberButton btnStyle = 'no-key' numbers={data.numbers} handleClick={handleClick} />
           </div>
           <div>
-            <ActionButton action={data.zero}  handleClick={handleClick} />
+            <ActionButton actionStyle = 'action-btn' action={data.zero}  handleClick={handleClick} />
           </div>
         </div>
         <div className = 'operators'>
-          <OperatorButton operators={data.operators} handleClick={handleClick} />
+          <OperatorButton operatorStyle = 'operator-btn'  operators={data.operators} handleClick={handleClick} />
         </div>
       </div>
 
