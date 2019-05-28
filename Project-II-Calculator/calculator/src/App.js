@@ -6,15 +6,15 @@ import ActionButton from './components/ButtonComponents/ActionButton';
 import OperatorButton from './components/ButtonComponents/OperatorButton';
 
 const data = {
-  numbers: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
-  operators: ['=', '+', '-', 'x', '÷'],
+  numbers: ['9', '8', '7', '6', '5', '4', '3', '2', '1'],
+  operators: ['÷', 'x', '-', '+', '='],
   zero: '0',
   clear: 'clear'
 }
 
 const App = () => {
   return (
-    <div>
+    <div className="cal-container">
       {/* <h3>Welcome to React Calculator</h3>
       <p>
         We have given you a starter project. You'll want to build out your
@@ -29,14 +29,20 @@ const App = () => {
       </p> */}
 
       <CalcDisplay />
-      <div>
-        <div>
-          <ActionButton action = {data.clear}/>
-          <NumberButton numbers = {data.numbers} />
-          <ActionButton action = {data.zero} />
+      <div className='button-container'>
+        <div className='btn-container'>
+          <div className= 'action'>
+            <ActionButton action={data.clear} />
+          </div>
+          <div className= 'number'>
+            <NumberButton numbers={data.numbers} />
+          </div>
+          <div className= 'action'>
+            <ActionButton action={data.zero} />
+          </div>
         </div>
-        <div>
-          <OperatorButton operators = {data.operators} />
+        <div className = 'operators'>
+          <OperatorButton operators={data.operators} />
         </div>
       </div>
 

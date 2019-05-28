@@ -6,7 +6,7 @@ function NumberButton(props) {
 
     return (
         numbers.map(no => {
-           return <div key={no}>{no}</div>
+           return <button className = 'no-key' key={no}>{no}</button>
         })
     )
 }

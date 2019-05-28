@@ -5,7 +5,7 @@ import './Button.css';
 function ActionButton(props) {
     return (
         <div>
-            <button>{props.action}</button>
+            <button className= 'action'>{props.action}</button>
         </div>
     )
 }

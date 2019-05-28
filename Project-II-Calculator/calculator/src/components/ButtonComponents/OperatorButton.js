@@ -6,7 +6,7 @@ function OperatorButton(props) {
 
     return (
         operators.map(operator => {
-           return <div key={operator}>{operator}</div>
+           return <button className='operator-btn' key={operator}>{operator}</button>
         })
     )
 }

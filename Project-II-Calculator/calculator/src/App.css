@@ -1,0 +1,30 @@
+.cal-container {
+    margin: 5rem auto;
+    width: 30%;
+    border: 2px #ccc solid;
+    
+}
+
+.button-container {
+    display: flex;
+}
+
+.btn-container {
+    width: 75%;
+}
+
+.btn-container button {
+    background-color: white;
+}
+
+.number {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
