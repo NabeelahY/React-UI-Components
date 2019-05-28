@@ -5,8 +5,8 @@ function NumberButton(props) {
     const { numbers } = props;
 
     return (
-        numbers.forEach(no => {
-           return <div>{no}</div>
+        numbers.map(no => {
+           return <div key={no}>{no}</div>
         })
     )
 }
